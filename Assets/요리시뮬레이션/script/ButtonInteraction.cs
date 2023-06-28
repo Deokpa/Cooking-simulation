@@ -14,8 +14,6 @@ public class ButtonInteraction : MonoBehaviour
     private Color originalColor;
     private Renderer targetRenderer;
 
-
-
     private void Start()
     {
         buttonController = GetComponent<ButtonController>();
