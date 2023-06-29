@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f572a274b81ea44a9bdafa8238f5504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonController: {fileID: 0}
+  buttonController: {fileID: 2328718302414980103}
   targetObject: {fileID: 2328718301922309544}
 --- !u!4 &1604380423
 Transform:
@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 2328718302414980102}
   - component: {fileID: 2328718302414980101}
   - component: {fileID: 2328718302414980100}
+  - component: {fileID: 2328718302414980103}
   m_Layer: 0
   m_Name: inductionButton
   m_TagString: Untagged
@@ -366,6 +367,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2328718302414980098}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2328718302414980103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2328718302414980098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95090eefe50e77847b9b4f3eec29fea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractableStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  _proximityZone: {fileID: 0}
+  _contactZone: {fileID: 0}
+  _actionZone: {fileID: 0}
+  _contactTests: 
+  _buttonPlaneCenter: {fileID: 0}
+  _makeSureToolIsOnPositiveSide: 1
+  _localButtonDirection: {x: 0, y: -1, z: 0}
+  _allValidToolsTags: ffffffff
+  _allowMultipleNearFieldInteraction: 0
 --- !u!95 &6594762978917718425
 Animator:
   serializedVersion: 4
