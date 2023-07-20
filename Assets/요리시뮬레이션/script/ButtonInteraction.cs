@@ -8,7 +8,7 @@ public class ButtonInteraction : MonoBehaviour
     public ButtonController buttonController;
     public GameObject targetObject;
 
-    private bool pot = false;
+    public bool pot = false;
     private bool objectOnTop2 = false;
     private bool isButtonPressed = false;
     private Color originalColor;
@@ -60,7 +60,8 @@ public class ButtonInteraction : MonoBehaviour
                 // 추가적인 코드 작성
             }
         }
-        else if (isButtonPressed && !pot) // 냄비가 위에 없다
+        else if (
+            isButtonPressed && !pot) // 냄비가 위에 없다
         {
             // 오브젝트 위에 오브젝트가 존재하지 않을 때 실행할 동작을 구현
             targetRenderer.material.color = Color.red;
@@ -85,20 +86,19 @@ public class ButtonInteraction : MonoBehaviour
     {
         // 오브젝트와 충돌한 다른 오브젝트의 개수가 1개 이상인 경우,
         // 즉, 오브젝트 위에 다른 오브젝트가 존재하는 경우로 판단합니다.
-        if (collision.contacts.Length > 0)
+
+        if (collision.gameObject.CompareTag("Pot")) 
         {
             pot = true;
-            if (collision.gameObject.CompareTag("Water"))
-            {
-                // 오브젝트 위에 추가 오브젝트가 존재할 때 실행할 동작을 구현
-                objectOnTop2 = true;
-            }
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
         // 충돌한 다른 오브젝트가 없으면 오브젝트 위에 오브젝트가 존재하지 않는 것으로 판단합니다.
-        pot = false;
+        if (collision.gameObject.CompareTag("Pot"))
+        {
+            pot = true;
+        }
     }
 }
