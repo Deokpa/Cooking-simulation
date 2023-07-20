@@ -261,6 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonController: {fileID: 2328718302414980103}
   targetObject: {fileID: 2328718301922309544}
+  pot: 0
 --- !u!4 &1604380423
 Transform:
   m_ObjectHideFlags: 0
@@ -290,6 +291,7 @@ GameObject:
   - component: {fileID: 2328718301922309548}
   - component: {fileID: 2328718301922309547}
   - component: {fileID: 2328718301922309546}
+  - component: {fileID: 2328718301922309549}
   m_Layer: 0
   m_Name: induction
   m_TagString: Untagged
@@ -376,6 +378,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2328718301922309544}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2328718301922309549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2328718301922309544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618e2abf3e37e0d4e96c2385f0099ad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttoninteract: {fileID: 0}
 --- !u!1 &2328718302414980098
 GameObject:
   m_ObjectHideFlags: 0
