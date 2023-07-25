@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RamenIngredients : MonoBehaviour
+public class Onion : MonoBehaviour
 {
     public GameObject ramenPrefab; // 라면 재료 3개로 나눠진 프리팹
     public Transform hand; // 손 위치 (Oculus Hand Tracking에서 자동으로 갱신)
@@ -14,7 +14,7 @@ public class RamenIngredients : MonoBehaviour
     // 버튼을 누르면 파가 나눠지도록 하는 메소드
     private void Start()
     {
-        potInteraction = FindObjectOfType<PotInteraction>();
+        //potInteraction = FindObjectOfType<PotInteraction>();
     }
     
     public void OnButtonPress()
@@ -27,14 +27,14 @@ public class RamenIngredients : MonoBehaviour
             Destroy(gameObject); // 원래 파 오브젝트 삭제
 
              // 파 조각을 Pot(냄비) 근처로 이동시킴
-            ramenPiece.GetComponent<Rigidbody>().useGravity = false;
-            ramenPiece.GetComponent<Rigidbody>().isKinematic = true;
-            ramenPiece.transform.position = hand.position; // 손 위치로 이동
+            //ramenPiece.GetComponent<Rigidbody>().useGravity = false;
+            //ramenPiece.GetComponent<Rigidbody>().isKinematic = true;
+            //ramenPiece.transform.position = hand.position; // 손 위치로 이동
 
-            if (potInteraction.IsPotOnInduction())
+            //if (potInteraction.IsPotOnInduction())
             {
                 // 파 조각을 인덕션 위에서 냄비로 들어가도록 처리
-                StartCoroutine(MoveToPot(ramenPiece.transform));
+             //   StartCoroutine(MoveToPot(ramenPiece.transform));
             }
         }
     }
