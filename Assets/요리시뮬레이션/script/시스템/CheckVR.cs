@@ -14,13 +14,11 @@ public class CheckVR : MonoBehaviour
         is_headset_connected = OVRManager.isHmdPresent;
         if(is_headset_connected)
         {
-            vr_controller.enabled = true;
-            pc_controller.enabled = false;
+            pc_controller.LockControl = false;
         }
         else
         {
-            vr_controller.enabled = false;
-            pc_controller.enabled = true;
+            pc_controller.LockControl = true;
         }
     }
 

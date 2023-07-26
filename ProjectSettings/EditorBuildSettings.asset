@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: "Assets/\uC694\uB9AC\uC2DC\uBBAC\uB808\uC774\uC158/\uC52C.unity"
+    guid: bc001328311411341b9c62a919e4829c
+  - enabled: 1
+    path: "Assets/\uC694\uB9AC\uC2DC\uBBAC\uB808\uC774\uC158/A\uD300 \uC52C.unity"
+    guid: 2f2cded02f6a1ea43b8d966e420e4b7d
+  - enabled: 1
+    path: "Assets/\uC694\uB9AC\uC2DC\uBBAC\uB808\uC774\uC158/B\uD300 \uC52C.unity"
+    guid: 6bd56480616fdbf4da277d52d872965e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bae432c9ddae83b4c8b030f7e224dabd,
       type: 2}
