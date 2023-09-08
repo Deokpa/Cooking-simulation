@@ -1492,9 +1492,9 @@ MonoBehaviour:
   MainCamera: {fileID: 232527800}
   CameraPosition: {fileID: 234596367}
   MouseSensitivity: 4
-  PlayerSpeed: 5
-  RunningSpeed: 7
-  JumpSpeed: 5
+  PlayerSpeed: 3
+  RunningSpeed: 5
+  JumpSpeed: 3
 --- !u!4 &1119891454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4188412984752900, guid: ce816f2e6abb0504092c23ed9b970dfd,
