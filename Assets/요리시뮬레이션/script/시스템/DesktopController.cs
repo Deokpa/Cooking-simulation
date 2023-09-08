@@ -5,14 +5,14 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-public class Controller : MonoBehaviour
+public class DesktopController : MonoBehaviour
 {
-    public static Controller Instance { get; protected set; }
+    public static DesktopController Instance { get; protected set; }
     public Camera MainCamera;
     public Transform CameraPosition;
         
     [Header("Control Settings")]
-    public float MouseSensitivity = 100.0f;
+    public float MouseSensitivity = 4.0f;
     public float PlayerSpeed = 5.0f;
     public float RunningSpeed = 7.0f;
     public float JumpSpeed = 5.0f;
@@ -41,7 +41,7 @@ public class Controller : MonoBehaviour
     void Start()
     {
         //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        Cursor.visible = false;
 
         m_IsPaused = false;
         m_Grounded = true;
@@ -57,6 +57,10 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
+        if (OVRManager.isHmdPresent)
+        {
+            return;
+        }
         bool wasGrounded = m_Grounded;
         bool loosedGrounding = false;
         
