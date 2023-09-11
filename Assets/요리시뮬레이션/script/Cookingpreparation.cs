@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cookingpreparation : MonoBehaviour
 {
-    public ButtonInteraction inductionButton;
+    private ButtonInteraction inductionButton;
     private float maxTime = 10f;
     private float currentTime = 0f;
 
