@@ -31,12 +31,14 @@ public class ButtonInteraction : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.layer == 7)
+        if (other.gameObject.layer == 7) // 손 레이어
         {
-            if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+            Debug.Log(OVRInput.GetDown(OVRInput.Button.One));
+            if (OVRInput.GetDown(OVRInput.Button.One))
             {
+                
                 PressButton();
             }
         }
