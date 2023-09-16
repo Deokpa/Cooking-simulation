@@ -1516,7 +1516,7 @@ GameObject:
   - component: {fileID: 437748510}
   - component: {fileID: 437748511}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2531,6 +2531,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5235045088053392112, guid: 6d2068c5ed3625e4ba17df912b3ff2d5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc4b2d6ed01096b4c967bbcdd11a0379, type: 2}
     - target: {fileID: -4338817211677171129, guid: 6d2068c5ed3625e4ba17df912b3ff2d5,
         type: 3}
       propertyPath: m_StaticEditorFlags
