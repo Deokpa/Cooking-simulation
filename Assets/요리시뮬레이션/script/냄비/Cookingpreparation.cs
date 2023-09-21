@@ -10,6 +10,7 @@ public class Cookingpreparation : MonoBehaviour
 
     private bool pot = false;
     private bool water = false;
+    private bool ingredients = false;  //식재료
 
     void Start()
     {
@@ -22,19 +23,41 @@ public class Cookingpreparation : MonoBehaviour
         if (inductionButton.isButtonPressed && pot) 
         {
             currentTime += Time.deltaTime;
-            if (water)
+            if (water != true)
             {
-                //물 끓는 애니메이션 추가
-            }
-            else if (!water) 
-            {
-                if (currentTime > maxTime)
+                if (inductionButton.isButtonPressed == true)
                 {
-                    //냄비가 타는 파티클 추가
-                    currentTime = 0;
+                    //다시
                 }
             }
+            else if (water == true) 
+            {
+                if (currentTime >= 4 && currentTime <= 6) //제 시간 안에 클릭을 했는가?
+                {
+                    if (ingredients == true) //yes 재료를 넣는다
+                    {
+                        //완성 알아서 보글보글 한 후 완성
+                        //5초 경과(ui로 인덕션 끄라는 메시지 띄우기)
+                        if(inductionButton.isButtonPressed == false)
+                        {
+                            //라면 옮기기로 이동
+                        }
+                        else if(inductionButton.isButtonPressed == true)
+                        {
+                            //불남
+                        }
+                    }
+                }
+                else
+                {
+                    //no 탔는지 덜익었는지 ui로 띄운 후 재시작
+                }
+
+
+
+            }
         }
+
     }
 
     private void OnCollisionEnter(Collision collision)
