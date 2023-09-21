@@ -10096,6 +10096,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5669271f10df47944bd0b900436b80cc, type: 2}
+  - {fileID: 2100000, guid: 5669271f10df47944bd0b900436b80cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11460,7 +11461,7 @@ GameObject:
   - component: {fileID: 748943298616709673}
   m_Layer: 0
   m_Name: CabinetLower_Backsplash_30Wx24Dx36H_Sink_KN002a
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
