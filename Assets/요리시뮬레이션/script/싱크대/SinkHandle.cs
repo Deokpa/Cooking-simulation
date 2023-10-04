@@ -13,6 +13,7 @@ public class SinkHandle : MonoBehaviour
     public bool test = false;
 
     public Animator sink_anim;
+    public SinkWater water;
     public Transform handle_pivot;
     public Transform handle;
     public float weight = 100.0f;
@@ -29,7 +30,7 @@ public class SinkHandle : MonoBehaviour
     {
         if (grab == null)
             return;
-        if(!test)
+        if(!grab.isGrabbed)
         {
             transform.position = handle.position;
             transform.rotation = handle.rotation;
@@ -47,6 +48,13 @@ public class SinkHandle : MonoBehaviour
                 dx = 1 - before_dx;
             handle_pivot.rotation = grab_origin_quat * Quaternion.Euler(0, -dx * 50.0f, 0);
             sink_anim.SetFloat("value", before_dx + dx);
+            if (water != null)
+            {
+                if (before_dx + dx > 0.8)
+                    water.On();
+                else if (before_dx + dx < 0.2)
+                    water.Off();
+            }
         }
     }
 }
