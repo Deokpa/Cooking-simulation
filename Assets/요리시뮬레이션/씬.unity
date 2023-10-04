@@ -597,6 +597,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 376283416373138738, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376283416373138738, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376283416373138738, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376283416373138738, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0744005
       objectReference: {fileID: 0}
@@ -728,32 +743,32 @@ PrefabInstance:
     - target: {fileID: 7914696003721575837, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
         type: 3}
       propertyPath: m_AABB.m_Center.x
-      value: 0.0038099983
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7914696003721575837, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
         type: 3}
       propertyPath: m_AABB.m_Center.y
-      value: 0.005516743
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 7914696003721575837, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
         type: 3}
       propertyPath: m_AABB.m_Center.z
-      value: 0.0030582787
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 7914696003721575837, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 0.0038100043
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: 7914696003721575837, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
         type: 3}
       propertyPath: m_AABB.m_Extent.y
-      value: 0.005516743
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 7914696003721575837, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
         type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 0.0030582764
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 7914696003721575837, guid: 31ebc2f27d1e74044b22d9e302af0e9c,
         type: 3}
@@ -2892,7 +2907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!154 &2096874065
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -4827,6 +4842,7 @@ GameObject:
   - component: {fileID: 748943298285518374}
   - component: {fileID: 748943298284420326}
   - component: {fileID: 748943298291634662}
+  - component: {fileID: 748943298291634663}
   m_Layer: 0
   m_Name: CabinetLower_Backsplash_30Wx24Dx36H_KN001a (1)
   m_TagString: Untagged
@@ -5426,6 +5442,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &748943298291634663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748943298282152486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.762, y: 0.91633075, z: 0.61165535}
+  m_Center: {x: 0.38099995, y: 0.45816526, z: 0.30582792}
 --- !u!65 &748943298337866254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12596,6 +12625,7 @@ GameObject:
   - component: {fileID: 2073328451850384152}
   - component: {fileID: 2073328451853808442}
   - component: {fileID: 2073328451852808698}
+  - component: {fileID: 2073328451853808443}
   m_Layer: 0
   m_Name: Floor_Carpet
   m_TagString: Untagged
@@ -12890,6 +12920,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073328451850809144}
   m_Mesh: {fileID: 4300008, guid: 274183700e5044543a184a6ba15ee153, type: 3}
+--- !u!65 &2073328451853808443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073328451850809144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.8309402, y: 0.00000030500723, z: 7.757778}
+  m_Center: {x: -0.0041023493, y: -0.0000001907454, z: 0.00032138824}
 --- !u!33 &2073328451853808444
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14828,6 +14871,7 @@ GameObject:
   - component: {fileID: 9165010797313084763}
   - component: {fileID: 9165010797309660537}
   - component: {fileID: 9165010797310660537}
+  - component: {fileID: 9165010797313084764}
   m_Layer: 0
   m_Name: Floor_Carpet
   m_TagString: Untagged
@@ -14956,6 +15000,19 @@ Transform:
   m_Father: {fileID: 9165010797313084759}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &9165010797313084764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165010797312659835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.8698716, y: 0.0000008950424, z: 5.2789016}
+  m_Center: {x: 0.0013935566, y: -0.00000012353622, z: -0.008343935}
 --- !u!4 &9165010797313084765
 Transform:
   m_ObjectHideFlags: 0

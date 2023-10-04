@@ -907,17 +907,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d0e6b6bbe8d92964391a90c5a8ab8fb4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.221
+      value: -4.268
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0e6b6bbe8d92964391a90c5a8ab8fb4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.53999996
+      value: 0.698
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0e6b6bbe8d92964391a90c5a8ab8fb4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.769
+      value: 1.201
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0e6b6bbe8d92964391a90c5a8ab8fb4,
         type: 3}
@@ -2001,12 +2001,6 @@ BoxCollider:
     type: 3}
   m_PrefabInstance: {fileID: 1171486390}
   m_PrefabAsset: {fileID: 0}
---- !u!137 &1353207463 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5427188079945055239, guid: a955c475db101504eb80f8e717bf49a7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1171486390}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1388435371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2981,11 +2975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a72549f08ae0f7949803e4b4707340d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh_renderer: {fileID: 1353207463}
-  plane: {fileID: 244383498}
-  collider: {fileID: 1353207462}
-  mesh: {fileID: 0}
-  cutting_normal_origin: {x: 0, y: 0, z: 0}
 --- !u!54 &1934860096
 Rigidbody:
   m_ObjectHideFlags: 0
