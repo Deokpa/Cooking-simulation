@@ -6,8 +6,10 @@ using OculusSampleFramework;
 public class ButtonInteraction : MonoBehaviour
 {
     public GameObject targetObject;
-
+    public Transform buttonPressedPosition;
     public bool isButtonPressed = false;
+
+    private Vector3 originalPosition;
     private Color originalColor;
     private Renderer targetRenderer;
 
@@ -15,6 +17,7 @@ public class ButtonInteraction : MonoBehaviour
     {
         targetRenderer = targetObject.GetComponent<Renderer>();
         originalColor = targetRenderer.material.color;
+        originalPosition = transform.position;
     }
 
     private void PressButton()
@@ -23,11 +26,13 @@ public class ButtonInteraction : MonoBehaviour
 
         if (isButtonPressed)
         {
-            targetRenderer.material.color = Color.red;     
+            targetRenderer.material.color = Color.red;
+            transform.position = buttonPressedPosition.position;
         }
         else if (!isButtonPressed)
         {
             targetRenderer.material.color = originalColor;
+            transform.position = originalPosition;
         }
 
     }
