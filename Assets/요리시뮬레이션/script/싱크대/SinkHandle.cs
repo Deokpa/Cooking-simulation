@@ -6,8 +6,9 @@ public class SinkHandle : MonoBehaviour
 {
     OVRGrabbable grab;
     Vector3 origin;
-    Vector3 handle_origin;
     Quaternion grab_origin_quat;
+    float before_dx = 0.0f;
+    float dx = 0.0f;
 
     public bool test = false;
 
@@ -19,7 +20,6 @@ public class SinkHandle : MonoBehaviour
     {
         grab = GetComponent<OVRGrabbable>();
         origin = transform.position;
-        handle_origin = handle.transform.position;
 
         grab_origin_quat = handle_pivot.transform.rotation;
     }
@@ -29,22 +29,24 @@ public class SinkHandle : MonoBehaviour
     {
         if (grab == null)
             return;
-        if(!grab.isGrabbed)
+        if(!test)
         {
             transform.position = handle.position;
             transform.rotation = handle.rotation;
             grab_origin_quat = handle_pivot.transform.rotation;
             origin = transform.position;
+            before_dx = sink_anim.GetFloat("value");
         }
         else
         {
-            float dx = (transform.position.x - origin.x) * weight;
-            if (dx > 1)
-                dx = 1;
-            if (dx < -1)
-                dx = 1;
-            handle_pivot.rotation = grab_origin_quat * Quaternion.Euler(0, -dx * 80.0f, 0);
-            sink_anim.SetFloat("value", (handle.position.x - handle_origin.x) * 100.0f);
+            dx = (transform.position.x - origin.x) * weight;
+            dx = (dx > 1) ? 1 : (dx < -1) ? -1 : dx;
+            if (dx + before_dx < 0)
+                dx = -before_dx;
+            if (dx + before_dx > 1)
+                dx = 1 - before_dx;
+            handle_pivot.rotation = grab_origin_quat * Quaternion.Euler(0, -dx * 50.0f, 0);
+            sink_anim.SetFloat("value", before_dx + dx);
         }
     }
 }
