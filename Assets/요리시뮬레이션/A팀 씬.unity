@@ -1360,7 +1360,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d0e6b6bbe8d92964391a90c5a8ab8fb4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.201
+      value: 1.304
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0e6b6bbe8d92964391a90c5a8ab8fb4,
         type: 3}
@@ -1957,7 +1957,7 @@ GameObject:
   - component: {fileID: 939403298}
   m_Layer: 0
   m_Name: water
-  m_TagString: Untagged
+  m_TagString: water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2017,7 +2017,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939403296}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -2043,7 +2043,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2b725e43204e8a741bbda66ca217f2c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4595,6 +4595,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769533466353283836, guid: 3c846c378430907448833e9b92eca00e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.14672685
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769533466353283836, guid: 3c846c378430907448833e9b92eca00e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.13443124
       objectReference: {fileID: 0}
     - target: {fileID: 5769533466353283836, guid: 3c846c378430907448833e9b92eca00e,
         type: 3}
