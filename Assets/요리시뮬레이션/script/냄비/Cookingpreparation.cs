@@ -5,8 +5,8 @@ using UnityEngine;
 public class Cookingpreparation : MonoBehaviour
 {
     private ButtonInteraction inductionButton;
-    private float maxTime = 10f;
-    private float currentTime = 0f;
+    public GameObject fire;
+    public float LimitTime;
 
     private bool pot = false;
     private bool water = false;
@@ -22,7 +22,6 @@ public class Cookingpreparation : MonoBehaviour
     {
         if (inductionButton.isButtonPressed && pot) 
         {
-            currentTime += Time.deltaTime;
             if (water != true)
             {
                 if (inductionButton.isButtonPressed == true)
@@ -32,7 +31,9 @@ public class Cookingpreparation : MonoBehaviour
             }
             else if (water == true) 
             {
-                if (currentTime >= 4 && currentTime <= 6) //제 시간 안에 클릭을 했는가?
+                LimitTime -= Time.deltaTime;
+                Debug.Log(LimitTime);
+                if (LimitTime >= 4 && LimitTime <= 6) //제 시간 안에 클릭을 했는가?
                 {
                     if (ingredients == true) //yes 재료를 넣는다
                     {
@@ -45,12 +46,14 @@ public class Cookingpreparation : MonoBehaviour
                         else if(inductionButton.isButtonPressed == true)
                         {
                             //불남
+                            fire.SetActive(true);
                         }
                     }
                 }
                 else
                 {
                     //no 탔는지 덜익었는지 ui로 띄운 후 재시작
+                    LimitTime = 10f;
                 }
 
 
