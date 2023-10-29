@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pot
   - water
+  - knife
   layers:
   - Default
   - TransparentFX
