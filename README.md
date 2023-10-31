@@ -1,4 +1,4 @@
-# 재정리, 버그 수정으로 인한 레포 https://github.com/Shell4026/CookingSimulation2로 이전
+# 재정리, 버그 수정으로 인한 레포 https://github.com/Shell4026/CookingSimulation2 로 이전
 
 # Cooking-simulation
  
