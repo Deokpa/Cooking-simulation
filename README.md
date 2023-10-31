@@ -1,3 +1,5 @@
+# 재정리, 버그 수정으로 인한 레포 https://github.com/Shell4026/CookingSimulation2로 이전
+
 # Cooking-simulation
  
 요리시뮬레이션 폴더의 Scene에서 작업합니다.
